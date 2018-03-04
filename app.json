@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/washcar/washcar",
+        "pages/order/order",
+        "pages/person/person",
+        "pages/home/home",
+        "pages/person/chongzhi/chongzhi",
+        "pages/person/myCar/myCar",
+        "pages/washcar/cheliang/cheliang",
+        "pages/washcar/cheliang/editChe/editChe",
+        "pages/washcar/xuanxiang/xuanxiang",
+        "pages/washcar/cheliang/addChe/addChe",
+        "pages/washcar/yuyue/yuyue",
+        "pages/person/openShext/openShext"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#009FE9"
+    },
+    "tabBar": {
+        "color": "#929292",
+        "selectedColor": "#009FE9",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "iconPath": "images/tab/index.png",
+                "selectedIconPath": "images/tab/indexh.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/washcar/washcar",
+                "iconPath": "images/tab/washcar.png",
+                "selectedIconPath": "images/tab/washcar_hi.png",
+                "text": "洗车"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "iconPath": "images/tab/order.png",
+                "selectedIconPath": "images/tab/orderh.png",
+                "text": "订单"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "iconPath": "images/tab/person.png",
+                "selectedIconPath": "images/tab/personh.png",
+                "text": "个人中心"
+            }
+        ]
+    }
+}
