@@ -1,0 +1,70 @@
+/* pages/person/myCar/myCar.wxss */
+
+.myCar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.car {
+    height: 250rpx;
+    padding: 20rpx;
+    margin: 20rpx 20rpx 0 20rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.car-con {
+    height: 160rpx;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+    border-bottom: 1px dashed #f3f3f3;
+}
+
+.car-img {
+    width: 240rpx;
+    height: 160rpx;
+    border: 1px solid #f3f3f3;
+}
+
+.car-info {
+    margin-left: 20rpx;
+}
+
+.car-info view {
+    line-height: 50rpx;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    flex: 1;
+    font-size: 40rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #fff;
+    margin: 0 30rpx;
+    border-radius: 10rpx;
+}
+
+.edit {
+    background-color: #ffbe00;
+}
+
+.xiche {
+    background-color: #8a6de9;
+}
+
+.carAdd {
+    color: white;
+    background-color: #3c87fc;
+    margin: 20rpx 40rpx;
+}

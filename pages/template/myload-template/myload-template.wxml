@@ -1,0 +1,6 @@
+<view style='display:{{ isDataLoad ? "none":"block" }}' class='loading'>
+    <view class='loadimg'>
+        <span class="whirly-loader">Loading&#8230;</span>
+    </view>
+    <text>正在加载数据 请骚等</text>
+</view>

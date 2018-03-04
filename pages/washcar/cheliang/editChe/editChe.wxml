@@ -1,0 +1,49 @@
+<view class='editChe-container'>
+    <view class='title'>请完善车辆信息以方便洗车员为您服务</view>
+    <view style='display:{{ ishow }}'>
+        <view class='cell-group'>
+            <view class='cell'>
+                <view class='label'>姓名</view>
+                <input type='text' placeholder='请输入您的姓名' bindblur="getName" value='{{ name }}'></input>
+                <view class='line'></view>
+            </view>
+            <view class='cell'>
+                <view class='label'>称呼</view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label class="radio" wx:for="{{ sexs }}" wx:key="{{ index }}">
+                        <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                    </label>
+                </radio-group>
+                <view class='line'></view>
+            </view>
+            <view class='cell'>
+                <view class='label'>联系电话</view>
+                <input type='number' placeholder='请输入您的联系电话' bindblur="getPhone" value='{{ phone }}'></input>
+            </view>
+        </view>
+        <view class='cell-group'>
+            <view class='cell'>
+                <view class='label'>车牌号</view>
+                <!-- <view class='chepai'>{{ chepai }}{{ zimu }}</view> -->
+                <view class='chepai' catchtap='hiddenFloatView2'>{{ chepai + ' ' + zimu }}</view>
+                <input type='text' placeholder='请输入5位数字字母' bindblur="getCheNum" value='{{ chenum }}'></input>
+                <view class='line'></view>
+            </view>
+            <view class='cell' catchtap='hiddenFloatView'>
+                <view class='label'>车型</view>
+                <input type='text' placeholder='请选择车型' value='{{ car }}' disabled></input>
+                <icon class='iconfont icon-youjiantou iconR'></icon>
+                <view class='line'></view>
+            </view>
+            <view class='cell'>
+                <view class='label'>颜色</view>
+                <input type='text' placeholder='请输入颜色' bindblur="getColor" value='{{ color }}'></input>
+            </view>
+        </view>
+        <button class='submit' catchtap='submit'>确定</button>
+        <button class='del' catchtap='del'>删除</button>
+    </view>
+
+</view>
+<include src="../../../template/picker-template/picker-template.wxml" />
+<include src="../../../template/picker-chepai-template/picker-chepai-template.wxml" />

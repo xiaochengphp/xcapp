@@ -1,0 +1,18 @@
+<view class='picker-content' animation="{{animation}}" style="visibility:{{isShowPicker ? 'visible':'hidden'}}" catchtap="hiddenFloatView">
+    <view class='picker-component'>
+        <text class="left-bt" catchtap="hiddenFloatView">取消</text>
+        <text class="right-bt" catchtap="hiddenFloatView">确定</text>
+        <view class="line"></view>
+        <picker-view indicator-style="height: 50rpx;" value="{{value}}" bindchange="bindChange">
+            <picker-view-column>
+                <view wx:for="{{ indexs }}" wx:key="{{ index }}" style="line-height: 50px;text-align:center">{{ item }}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{ cars }}" wx:key="{{ index }}" style="line-height: 50px;text-align:center">
+                    <image src='{{ item.icon }}' style='width:50rpx;height:50rpx;margin:0 10rpx;'></image>
+                    {{item.name}}
+                </view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+<view class='cheliang-container'>
+    <block wx:for="{{ ches }}" wx:key="{{ index }}">
+        <view class='car-item'>
+            <view class='icon'><icon class='iconfont icon-xuanzhong {{ item.id === selCheIndex?"icon_active":"" }}'></icon></view>
+            <view class='content' catchtap='selChe' data-data="{{ item }}">
+                <view class='che-name'>{{ item.car }}</view>
+                <view class='che-pai'>{{ item.carpai }}</view>
+            </view>
+            <view class='icon' catchtap='selCheEdit' data-id="{{ item.id }}"><icon class='iconfont icon-edit'></icon></view>
+        </view>
+    </block>
+    <view class='addChe' catchtap='addChe'>
+        <view class='add-text'>新增车辆</view>
+        <view class='add-icon'><icon class='iconfont icon-xinzeng'></icon></view>
+    </view>
+</view>
+

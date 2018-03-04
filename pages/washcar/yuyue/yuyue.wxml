@@ -1,0 +1,39 @@
+<!--src/components/selFuwutime/selFuwutime.wxml-->
+<view class='selFuwutime'>
+    <view class='showyuding'>
+        <button>可预定</button>
+        <button style='background-color: #F3F3F3'>不可定</button>
+    </view>
+    <view class='selriqi'>
+        <block wx:for="{{ dayList }}" wx:key="{{ dayList }}">
+            <view class='week {{isc == index?"week_active":""}}' data-isc="{{ index }}" data-data="{{ item }}" bindtap='choose_date'>{{ item.day }}</view>
+        </block>
+    </view>
+
+    <view class='slot' style='display:{{ !isDataLoad ? "none":"block" }}'>
+        <view class='fengex'></view>
+        <view class='fengez'>上午</view>
+        <view class='seltime'>
+            <button wx:for="{{ swTimeList }}" wx:key="{{ index }}"  class='btn-sel {{ item.isHi == 1 ? "":"btn-no" }}' catchtap='{{ item.isHi == 1?"swTime":"noSwTime" }}' data-start="{{ item.start }}">{{ item.start }}</button>
+        </view>
+
+        <view class='fengex'></view>
+        <view class='fengez'>下午</view>
+        <view class='seltime'>
+            <button wx:for="{{ xwTimeList }}" wx:key="{{ index }}" class='btn-sel {{ item.isHi == 1 ? "":"btn-no" }}' catchtap='{{ item.isHi == 1?"swTime":"noSwTime" }}' data-start="{{ item.start }}">{{ item.start }}</button>
+        </view>
+
+        <view class='fengex'></view>
+        <view class='fengez'>晚上</view>
+        <view class='seltime'>
+            <button wx:for="{{ wsTimeList }}" wx:key="{{ index }}" class='btn-sel {{ item.isHi == 1 ? "":"btn-no" }}' catchtap='{{ item.isHi == 1?"swTime":"noSwTime" }}' data-start="{{ item.start }}">{{ item.start }}</button>
+        </view>
+
+        <view class='fengex'></view>
+        <view class='fengez wx'>温馨提示</view>
+        <view class='wxts'>
+            <text>选择时间段内10分钟师傅到场</text>
+        </view>
+    </view>
+</view>
+<include src="../../template/myload-template/myload-template.wxml" />

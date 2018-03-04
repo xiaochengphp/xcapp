@@ -1,0 +1,120 @@
+.xuanxiang-container{
+    margin-bottom: 150rpx;
+}
+.title {
+    width: 100%;
+    height: 60rpx;
+    color: grey;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.options {
+    height: 160rpx;
+    margin: 10rpx 20rpx;
+    padding: 20rpx;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10rpx;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.icon {
+    width: 80rpx;
+    height: 160rpx;
+    line-height: 160rpx;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.content-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-head-title {
+    font-weight: bold;
+}
+
+.content-head-money {
+    color: red;
+    float: right;
+}
+
+.content-dec {
+    color: grey;
+    font-size: 24rpx;
+    height: 96rpx;
+    overflow: hidden;
+    margin-top: 10rpx;
+}
+.footer{
+    width: 100%;
+    height: 90rpx;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    text-align: center;
+}
+.quxiao{
+    width: 320rpx; 
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius: 10rpx;
+    margin: 10rpx 30rpx;
+    border: 1px solid rgba(0,0,0,.2);
+}
+.submit{
+    width: 320rpx; 
+    height: 70rpx;
+    color: #fff;
+    line-height: 70rpx;
+    border-radius: 10rpx;
+    background-color: #009FE9;
+    margin: 10rpx 30rpx;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1512308933894'); /* IE9*/
+    src: url('iconfont.eot?t=1512308933894#iefix') format('embedded-opentype'),
+         /* IE6-IE8 */ url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAWoAAsAAAAACCQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kg0Y21hcAAAAYAAAABnAAABnM5HaEdnbHlmAAAB6AAAAaoAAAHcXFv0W2hlYWQAAAOUAAAAMQAAADYPtIeIaGhlYQAAA8gAAAAgAAAAJAffA4dobXR4AAAD6AAAABAAAAAQD+v//2xvY2EAAAP4AAAACgAAAAoBZAC6bWF4cAAABAQAAAAfAAAAIAETAF1uYW1lAAAEJAAAAUUAAAJtPlT+fXBvc3QAAAVsAAAAOgAAAEtEv5rNeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/s04gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDxzY27438AQw9zI0AAUZgTJAQApkgy2eJxjYGBgZWBgYAZiHSBmYWBgzGBgZACBJKAoI1icmYELLM7CYAbkcwAhE5CueOrzzO3/fxQWCDCCVXCAWcwglYxsDAMGGAfOalTAAyZNoDxQeFdAMdCJT30gGCT+zA2CGZgAhcYRtwB4nD1PPW/TUBS95z1/xG3i1E7ir8RJHJMaFLBSkxZRhJtKLCCGVEyMSN0qMsDQJUOQgsTAwG8gSAzMYepcfgFD2FC7wZI92Dyo1Kujo3PvPdI9l2Si/Cc/4w5V6Cbt0CMaEUHpoaMzH0E0iFkPtUCu2VWdR2EUqGEn5g9hd5SqlewNtm1FVcrQ0cTdINmLYhZhd5CyB0gsH3Dr3jOz2zD5B2w4UfNt9oR9RK0VNsrpnezx7YNq0q4UToum6Zrm+4IiywXGpLKOl7alydqGkn2Sy17trHWLtVB0I+/p81K7br54Nxj7XVsDplNU6m3984HhGQITz6qYrrpVKjheKbxRxenlplMp+tsXJEoSv37nX3iPNskmh7riUx1qE3aKezF4jEgI0ergYcqS/0qNwWixkuXV4ornS0lazq/4F9LxZJyCz46PZ7x37Vms1j+uTfMlJsOToYDw8BkRy/N8KjH+hmRyRQZVQ6QhMILdQNwzxNlA5DBCA9YIxPZHmYPz9SW7/+db/xA47HN/Z8he4/dRLrZHmZV95Y1XYr6+6A//7XGe7RP9BarzZrwAAHicY2BkYGAA4vm86p7x/DZfGbhZGEDgmpfiURj9////BhYm5kYgl4OBCSQKABlmCuoAAAB4nGNgZGBgbvjfwBDDwvT/PwMDCxMDUAQFsAAAdjMEbwQAAAAD6QAABAAAAAQC//8AAAAAAHYAugDuAAB4nGNgZGBgYGEIZGBlAAEmIOYCQgaG/2A+AwAREgFxAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgIWRiZGZkYWRlYGxQiQzOT8vLT+vJL+gJDM/L6m0pCQ/j81INzm/oJKBAQDIywtlAAA=') format('woff'),
+         url('iconfont.ttf?t=1512308933894') format('truetype'),
+         /* chrome,
+         firefox,
+         opera,
+         Safari,
+         Android,
+         iOS 4.2+*/ url('iconfont.svg?t=1512308933894#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 26px;
+    color: gray;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfontoptionbutton:before {
+    content: "\e646";
+}
+
+.icon-2-copy:before {
+    content: "\e54c";
+}
+
+.options_active{
+    color: #009FE9;
+}

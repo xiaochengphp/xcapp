@@ -1,0 +1,40 @@
+<view class='order-container'>
+    <view class='tab'>
+        <view class='tab-item {{ table_active == 0 ? "tab_active":"" }}' catchtap='onConduct'>进行中</view>
+        <view class='tab-item {{ table_active == 1 ? "tab_active":"" }}' catchtap='onComplete'>已完成</view>
+        <view class='tab-item {{ table_active == 2 ? "tab_active":"" }}' catchtap='onAll'>全部</view>
+    </view>
+    <view class='dataList'>
+        <block wx:for="{{ dataList }}" wx:key="{{ index }}">
+            <view class='dataList-tiem'>
+                <view class='dataList-tiem-title'>
+                    <view class='tiem-id'>
+                        <text class='label'>订单编号: </text> {{item.id }}</view>
+                    <view class='tiem-state {{ item.state === "进行中"?"state_red":"state_green" }}'>{{ item.state }}</view>
+                </view>
+                <view class='dataList-tiem-con'>
+                    <view>
+                        <text class='label'>服务项目: </text>
+                        <text>{{ item.fwType }}</text>
+                    </view>
+                    <view>
+                        <text class='label'>预约时间: </text>
+                        <text>{{ item.yuyueTime }}</text>
+                    </view>
+                    <view>
+                        <text class='label'>订单时间: </text>
+                        <text>{{ item.createTime }}</text>
+                    </view>
+                    <view>
+                        <text class='label'>地址: </text>
+                        <text>{{ item.address }}</text>
+                    </view>
+                </view>
+                <view class='dataList-tiem-bot'>
+                    <text class='label'>服务车辆: </text>
+                    <text>{{ "[" + item.carpai + "] " + item.car }}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

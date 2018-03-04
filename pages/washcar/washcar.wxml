@@ -1,0 +1,58 @@
+<!--pages/washcar/washcar.wxml-->
+<view class='washcar-container'>
+    <view class='title'>基本信息</view>
+    <view class='cell-group'>
+        <view class='cell' catchtap='onGoCheliang'>
+            <view class='label'>服务车辆</view>
+            <input type='text' placeholder='请选择车辆' disabled value='{{ fwCheliang }}'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <!-- <view class='cell'>
+            <view class='label'>手机号</view>
+            <input type='text' placeholder='请填写手机号' bindblur="getPhone" type='number'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view> -->
+        <!-- <view class='cell'>
+            <view class='label'>开通小区</view>
+            <input type='text' placeholder='请选择小区'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view> -->
+        <view class='cell' catchtap='onGoWeizhi'>
+            <view class='label'>车辆位置</view>
+            <input type='text' placeholder='请选择车辆位置' disabled value='{{ washcarWeizhi }}'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view  wx:if="{{ washcarAddress }}" class='line'></view>
+        </view>
+        <view wx:if="{{ washcarAddress }}" class='cell' catchtap='onGoWeizhi'>
+            <view class='label'>详细地址</view>
+            <input type='text' placeholder='详细地址' disabled value='{{ washcarAddress }}'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+    </view>
+
+    <view class='title'>洗车服务</view>
+    <view class='cell-group'>
+        <view class='cell' catchtap='onGoXuanxiang'>
+            <view class='label'>服务选项</view>
+            <input type='text' placeholder='请选择服务选项' disabled value='{{ yuyueXX }}'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <view class='cell' catchtap='onGoYuye'>
+            <view class='label'>预约时间</view>
+            <input type='text' placeholder='请选择预约时间' disabled value='{{ yuyueTime }}'></input>
+            <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+    </view>
+    <view class='title'>填写备注</view>
+    <view class="section">
+        <textarea placeholder="注意事项或车辆周围环境" show-confirm-bar="{{ false }}" bindblur="getBeizhu" />
+    </view>
+</view>
+<view class='bottomView'>
+    <view class='money'>合计:￥{{ money }}</view>
+    <button class='submit' catchtap='submit'>付款</button>
+</view>

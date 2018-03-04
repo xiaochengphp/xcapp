@@ -1,0 +1,31 @@
+<view class='home-container'  style='display:{{ !isDataLoad ? "none":"block" }}'>
+    <swiper autoplay="true" circular="true" indicator-dots="true" interval="5000">
+        <block wx:for="{{ swiperImg }}" wx:key="{{ item.id }}">
+            <swiper-item>
+                <image src='{{ item.image }}'></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view>
+        <block wx:for="{{ washcar }}" wx:key="{{ washcar.id }}">
+            <view class='washcar-item'>
+                <image src='{{ item.image }}' lazy-load="true"></image>
+                <view class='washcar-item-content'>
+                    <text class='title'>{{ item.title }}</text>
+                    <text class='dec'>{{ item.content }}</text>
+                </view>
+                <view class='btn-yuyue'>
+                    <text class='money'>￥{{ item.price }}</text>
+                    <button bindtap='onGoWashTap' data-option="{{ item }}" data-key="{{ index }}">预约</button>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+    <view style='display:{{ isDataLoad ? "none":"block" }}' class='loading'>
+        <view class='loadimg'>
+            <span class="whirly-loader">Loading&#8230;</span>
+        </view>
+        <text>正在加载数据 请骚等</text>
+    </view>

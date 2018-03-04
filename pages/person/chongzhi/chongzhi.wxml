@@ -1,0 +1,5 @@
+
+<view>
+    <input  type='number' placeholder="输入充值价格" />
+    <button class='chongzhi' bindtap='chongzhi'>确定充值</button>
+</view>

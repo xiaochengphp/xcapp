@@ -1,0 +1,19 @@
+<view class='myCar-container'>
+    <block wx:for="{{ carsList }}" wx:key="{{ index }}">
+        <view class='car'>
+            <view class='car-con'>
+                <image src='/images/car.png' class='car-img'></image>
+                <view class='car-info'>
+                    <view>车牌: {{ item.carpai }}</view>
+                    <view>车型: {{ item.car }}</view>
+                    <view>颜色: {{ item.color }}</view>
+                </view>
+            </view>
+            <view class='btns'>
+                <view class='btn edit' bindtap='carEdit' data-id="{{ item.id }}">编辑</view>
+                <view class='btn xiche' bindtap='xiche' data-data="{{ item }}">洗车</view>
+            </view>
+        </view>
+    </block>
+    <button class='carAdd' bindtap='carAdd'>添加爱车</button>
+</view>

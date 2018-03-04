@@ -1,0 +1,13 @@
+
+input{
+    margin: 20rpx;
+    height: 80rpx;
+    font-size: 40rpx;
+    padding-left: 10rpx;
+    border: 1px solid #92B6F1;
+}
+.chongzhi{
+    color: #fff;
+    margin: 20rpx;
+    background-color: #92B6F1;
+}

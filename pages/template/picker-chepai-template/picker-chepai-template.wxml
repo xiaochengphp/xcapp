@@ -1,0 +1,17 @@
+<view class='picker-content' animation="{{animation2}}" style="visibility:{{isShowPicker2 ? 'visible':'hidden'}}" catchtap="hiddenFloatView2">
+    <view class='picker-component'>
+        <text class="left-bt" catchtap="hiddenFloatView2">取消</text>
+        <text class="right-bt" catchtap="hiddenFloatView2">确定</text>
+        <view class="line"></view>
+        <picker-view indicator-style="height: 50rpx;" bindchange="bindChange2" value="{{ value2 }}" >
+            <picker-view-column>
+                <view wx:for="{{ chepais }}" wx:key="{{ index }}" style="line-height: 50px;text-align:center">{{ item }}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{ zimus }}" wx:key="{{ index }}" style="line-height: 50px;text-align:center">
+                {{ item }}
+                </view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>

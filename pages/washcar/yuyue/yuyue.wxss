@@ -1,0 +1,92 @@
+button {
+    height: 66rpx;
+    color: #454545;
+    font-size: 28rpx;
+    display: inline-block;
+    margin: 0 5rpx;
+}
+.btn-sel{
+    width: 128rpx;
+    margin: 10rpx 5rpx;
+        background: #fff;
+}
+.showyuding {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.selriqi {
+    width: 310px;
+    margin: 0px auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.week {
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 2px;
+}
+
+.week_active {
+    background-color: #009fe9;
+    color: white;
+}
+
+.slot {
+    width: 310px;
+    margin: 0px auto;
+}
+
+.fengex {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-top: 15px;
+}
+
+.fengez {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    color: #e0e0e0;
+    margin: -10px auto;
+}
+
+.seltime {
+    padding: 10px 18px;
+}
+
+.zan-btn {
+    border-radius: 5px;
+    margin: 15px 5px 0px 0px;
+}
+
+.btn-no {
+    background-color: #f3f3f3;
+}
+
+.wx {
+    width: 80px;
+}
+
+.wxts {
+    color: #e0e0e0;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.loading{
+    top: 30%;
+    left: 50%;
+    margin-left: -100rpx;
+    position: fixed;
+}

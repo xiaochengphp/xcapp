@@ -1,0 +1,79 @@
+<view class='person-container'>
+    <view class='head'>
+        <view class='left-dingdan'>
+            <view class='head-name'>进行中</view>
+            <view class='head-num dingdan_color'>2017</view>
+        </view>
+        <view>
+            <view class='avatar'>
+                <image src='{{ avatarUrl }}' class='Rotation'></image>
+            </view>
+            <view class='username'>{{ username }}</view>
+        </view>
+        <view class='right-yue'>
+            <view class='head-name'>余额</view>
+            <view class='head-num dingdan_color'>0613</view>
+        </view>
+
+    </view>
+    <view class='nav'>
+        <view class='nav-item no-before' bindtap='onChengeRoot'>
+            <image src='/images/nav1.png'></image>
+            <view>修改权限</view>
+        </view>
+        <view class='nav-item' bindtap='onMyCar'>
+            <image src='/images/nav2.png'></image>
+            <view>我的爱车</view>
+        </view>
+        <view class='nav-item' bindtap='onGoOrder'>
+            <image src='/images/nav3.png'></image>
+            <view>我的订单</view>
+        </view>
+        <view class='nav-item'>
+            <image src='/images/nav4.png'></image>
+            <view>VIP尊享</view>
+        </view>
+    </view>
+
+    <view class='cell-group' style='margin-top:20rpx;'>
+        <view class='cell'  bindtap='chongzhi'>
+            <view class='label'>
+                <icon class='iconfont icon-yue1'></icon>
+                <text>余额充值</text>
+            </view>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <view class='cell'>
+            <view class='label'>
+                <icon class='iconfont icon-youhui'></icon>
+                <text>优惠券</text>
+            </view>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <view class='cell' bindtap='onAddressAdmin'>
+            <view class='label'>
+                <icon class='iconfont icon-dizhi'></icon>
+                <text>地址管理</text>
+            </view>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <view class='cell'>
+            <view class='label'>
+                <icon class='iconfont icon-pinglun'></icon>
+                <text>查看评论</text>
+            </view>
+            <icon class='iconfont icon-youjiantou'></icon>
+            <view class='line'></view>
+        </view>
+        <view class='cell' bindtap='onOpenShext'>
+            <view class='label'>
+                <icon class='iconfont icon-dizhi'></icon>
+                <text>打开摄像头</text>
+            </view>
+            <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+    </view>
+</view>

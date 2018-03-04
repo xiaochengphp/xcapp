@@ -1,0 +1,37 @@
+<view class='xuanxiang-container'>
+    <view class='title'>基本</view>
+    <view>
+        <block wx:for="{{ jiben }}" wx:key="{{ index }}">
+            <view class='options' catchtap='{{ item.isHi ? "":"danxuan" }}' data-data="{{ item }}" data-key="{{ index }}">
+                <view class='icon'><icon class='iconfont icon-iconfontoptionbutton {{ item.isHi ? "options_active":"" }}'></icon></view>
+                <view class='content'>
+                    <view class='content-head'>
+                        <view class='content-head-title'>{{ item.title }}</view>
+                        <view class='content-head-money'>￥{{ item.price }}</view>
+                    </view>
+                    <view class='content-dec'>{{ item.content }}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+
+    <view class='title'>可选</view>
+    <view>
+        <block wx:for="{{ duoxuan }}" wx:key="{{ index }}">
+            <view class='options' catchtap='duoxuan' data-data="{{ item }}" data-key="{{ index }}">
+                <view class='icon'><icon class='iconfont icon-2-copy {{ item.isHi ? "options_active":"" }}'></icon></view>
+                <view class='content'>
+                    <view class='content-head'>
+                        <view class='content-head-title'>{{ item.title }}</view>
+                        <view class='content-head-money'>￥{{ item.price }}</view>
+                    </view>
+                    <view class='content-dec'>{{ item.content }}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class='footer'>
+    <view class='quxiao' catchtap='quxiao'>取消</view>
+    <view class='submit' catchtap='submit'>确定</view>
+</view>
